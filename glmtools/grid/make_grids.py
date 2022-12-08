@@ -486,12 +486,12 @@ class GLMlutGridder(GLMGridder):
             accum_extent_density = accumulate_var_on_grid_direct_idx(
                     extent_density_grid[:,:,i],
                     'lutevent_flash_count', 'mesh_xi', 'mesh_yi')
-            accum_footprint = accumulate_var_on_grid_direct_idx(
-                    footprint_grid[:,:,i],
-                    'lutevent_total_flash_area', 'mesh_xi', 'mesh_yi')
-            accum_min_area = accumulate_minvar_on_grid_direct_idx(
-                     min_area_grid[:,:,i],
-                    'lutevent_min_flash_area', 'mesh_xi', 'mesh_yi')
+            #accum_footprint = accumulate_var_on_grid_direct_idx(
+            #        footprint_grid[:,:,i],
+            #        'lutevent_total_flash_area', 'mesh_xi', 'mesh_yi')
+            #accum_min_area = accumulate_minvar_on_grid_direct_idx(
+            #         min_area_grid[:,:,i],
+            #        'lutevent_min_flash_area', 'mesh_xi', 'mesh_yi')
 
             init_density_target   = point_density(accum_init_density)
 
